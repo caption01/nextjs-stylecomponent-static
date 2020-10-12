@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "antd";
 
 const TitleIndex = styled.h1`
   font-size: 50px;
@@ -6,7 +7,11 @@ const TitleIndex = styled.h1`
 `;
 
 const NextPage = () => {
-  return <a href="/about">about page</a>;
+  return (
+    <Button type="primary">
+      <a href="/about">about page</a>
+    </Button>
+  );
 };
 
 export default function Home() {
