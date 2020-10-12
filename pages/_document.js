@@ -9,6 +9,12 @@ class MyHead extends Head {
       <head {...this.props}>
         {head}
         {styleTags}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.7.0/antd.min.css"
+          integrity="sha512-74vrvh18b+tTlQHnF591KylgOKqX7kZZ1nIHlvbjx49vPiFNjwAf3wztKuar1Qbkpt3c71YY/9iB43R4K9O7xA=="
+          crossorigin="anonymous"
+        />
       </head>
     );
   }
