@@ -2,15 +2,11 @@ import Document, { Head, Main, NextScript, Html } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 const APP_ENV = process.env.APP_ENV;
-
-console.log("APP ENV", APP_ENV);
 class MyHead extends Head {
   render() {
     let { head, styleTags } = this.context;
-    let children = this.props.children;
     return (
       <head {...this.props}>
-        {children}
         {head}
         {styleTags}
       </head>
