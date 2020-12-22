@@ -17,7 +17,7 @@ const NextPage = () => {
 export default function Home() {
   return (
     <div>
-      <TitleIndex>Index pages</TitleIndex>;
+      <TitleIndex>Index pages</TitleIndex>
       <NextPage />
     </div>
   );
