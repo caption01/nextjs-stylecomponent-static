@@ -1,24 +1,14 @@
-import styled from "styled-components";
-import { Button } from "antd";
+import Card from "../component/card";
+import { useProps, withProps2 } from "../helper/withProps";
 
-const TitleIndex = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-const NextPage = () => {
+const IndexPage = (props) => {
   return (
-    <Button type="primary">
-      <a href="/about">about page</a>
-    </Button>
+    <div>
+      <h1>{props.title}</h1>
+      <Card />
+    </div>
   );
 };
 
-export default function Home() {
-  return (
-    <div>
-      <TitleIndex>Index pages</TitleIndex>
-      <NextPage />
-    </div>
-  );
-}
+export default useProps("hello")(IndexPage);
+// export default withProps2("hello")(IndexPage);
